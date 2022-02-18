@@ -1,0 +1,11 @@
+<div class="form">
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category,  as: :select, collection: $category, prompt: 'Select Category', label: "Category Selection" %>
+  <div class="submit button"></div>
+    <%= f.button :submit, value: 'Submit', data: { disable_with: "Submit" }, class: "btn btn-dark" %>
+  </div>
+<% end %>
+</div>

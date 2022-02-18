@@ -1,0 +1,9 @@
+<div class="form">
+  <%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating %>
+</div>
+<div class="submit button"></div>
+<%= f.button :submit, value: 'Submit', data: { disable_with: "Submit" }, class: "btn btn-dark" %>
+</div>
+<% end %>
